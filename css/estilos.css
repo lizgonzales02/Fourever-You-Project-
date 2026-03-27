@@ -13,7 +13,7 @@ body {
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/ahoratodos.png");
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../img/ahoratodos.webp");
   background-attachment: scroll;
   background-position: top center;
   background-size: cover;
