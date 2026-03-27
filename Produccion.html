@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produccion</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        .body-produccion {
+            background: url('img/aaaaaaaaaaaaaasdfghjk.png') no-repeat center center fixed;
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* ESTILOS PRODUCCIÓN */
+        .prod-header h1 {
+            font-family: 'Playfair Display', serif;
+            color: #2c2c2c;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .prod-header p {
+            font-family: 'Poppins', sans-serif;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            color: #2c2c2c;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .section-card {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            margin-bottom: 2rem;
+        }
+
+        .section-card h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #2c2c2c;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-card p {
+            font-family: 'Inter', sans-serif;
+            color: #555;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        /* CAST GRID */
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .actor-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .actor-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+        }
+
+        .actor-image {
+            width: 100%;
+            height: 320px;
+            background: linear-gradient(135deg, #e8e8e8 0%, #d4d4d4 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 3rem;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .actor-info {
+            padding: 1.5rem;
+        }
+
+        .actor-name {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #2c2c2c;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .actor-real-name {
+            font-family: 'Inter', sans-serif;
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .actor-role {
+            font-family: 'Inter', sans-serif;
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .actor-role strong {
+            color: #2c2c2c;
+            font-weight: 600;
+        }
+
+        /* BUTTONS */
+        .nav-buttons {
+            text-align: center;
+            margin-top: 3rem;
+            padding: 2rem 0;
+        }
+
+        .nav-buttons a {
+            margin: 0 0.8rem;
+        }
+    </style>
+</head>
+
+<body class="body-produccion">
+    <header class="masthead text-center text-white prod-header"
+        style="background: linear-gradient(rgba(47, 23, 15, 0.8), rgba(47, 23, 15, 0.8)), url('img/ahoratodos.png'); background-size: cover; padding: 3rem 1rem;">
+        <h1>Producción: ¡La novela será serie tailandesa!</h1>
+        <p>Estamos trabajando en la adaptación a serie. Conoce al elenco confirmado.</p>
+    </header>
+
+    <section class="page-section">
+        <div class="container">
+            <!-- DETALLES DE PRODUCCIÓN -->
+            <div class="section-title">Detalles de la Producción</div>
+            <div class="section-card">
+                <h3>Studio Wabi Sabi Revoluciona el BL</h3>
+                <p>Studio Wabi Sabi revoluciona el BL con el estreno de "Fourever You Project".
+                    La industria del entretenimiento tailandés marca un nuevo hito con el lanzamiento de "Fourever You
+                    Project",
+                    la ambiciosa adaptación televisiva de las populares novelas de la autora Howlsairy. Producida por la
+                    reconocida casa Studio Wabi Sabi,
+                    la serie inició sus transmisiones oficiales el 3 de octubre de 2024, consolidándose rápidamente como
+                    uno de los estrenos
+                    más esperados del género.
+                <div>
+                    Producción y Dirección de Alto Nivel
+                    Bajo el sello de Studio Wabi Sabi, el proyecto cuenta con la dirección de dos figuras clave en el
+                    drama tailandés:
+                    Siwaj Sawatmaneekul (conocido como New Siwaj) y Nantalit Tampacha (Ko).
+                    El guion, que entrelaza cuatro historias basadas en los puntos cardinales (Norte, Sur, Este y
+                    Oeste),
+                    fue desarrollado por Rampha Phetchart y Utchariyakorn Sirikam
+                </div>
+                </p>
+            </div>
+
+            <div class="section-card">
+                <h3>Dirección y Producción</h3>
+                <p><strong>Directores:</strong> Siwaj Sawatmaneekul (New Siwaj) y Nantalit Tampacha (Ko). El guion, que
+                    entrelaza cuatro historias basadas en los puntos cardinales (Norte, Sur, Este y Oeste), fue
+                    desarrollado por Rampha Phetchart y Utchariyakorn Sirikam. La serie consta de 17 episodios, emitida
+                    originalmente por GMM 25, con versión UNCUT disponible en WeTV.</p>
+            </div>
+
+            <!-- ELENCO DE ESTRELLAS -->
+            <div class="section-title" style="margin-top: 3rem;">Elenco de Estrellas</div>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem; font-family: 'Inter', sans-serif;">Conoce a
+                los actores que dan vida a las historias de Howlsairy</p>
+
+            <div class="cast-grid">
+                <!-- EAST: Hill -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/dhjk.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Hill</strong></div>
+                        <div class="actor-name">Ponlawit Ketprapakorn</div>
+                        <div class="actor-real-name">(Pond)</div>
+                    </div>
+                </div>
+
+                <!-- EAST: Easter -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/earth.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Easter / Ter</strong></div>
+                        <div class="actor-name">Katsamonnat Namwirote</div>
+                        <div class="actor-real-name">(Earth)</div>
+                    </div>
+                </div>
+
+                <!-- NORTH: Johan -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/marky.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Johan / Jo</strong></div>
+                        <div class="actor-name">Ratchata Pichetshote</div>
+                        <div class="actor-real-name">(Maxky)</div>
+                    </div>
+                </div>
+
+                <!-- NORTH: North -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/bass.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>North</strong></div>
+                        <div class="actor-name">Suradej Pinnirat</div>
+                        <div class="actor-real-name">(Bas)</div>
+                    </div>
+                </div>
+
+                <!-- SOUTH: Tonfah -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/faf.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Tonfah / Fah</strong></div>
+                        <div class="actor-name">Patsaporn Jansuppakitkun</div>
+                        <div class="actor-real-name">(Bever)</div>
+                    </div>
+                </div>
+
+                <!-- SOUTH: Typhoon -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/poond.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Typhoon / Phoon</strong></div>
+                        <div class="actor-name">Ruttasart Chimkul</div>
+                        <div class="actor-real-name">(Tonliew)</div>
+                    </div>
+                </div>
+
+                <!-- WEST: Arthit -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/arthi.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Arthit / Thit</strong></div>
+                        <div class="actor-name">Anupart Luangsodsai</div>
+                        <div class="actor-real-name">(Ngern)</div>
+                    </div>
+                </div>
+
+                <!-- WEST: Daotok -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/daoooooo.jpg') no-repeat center center; background-size: cover;">
+                    </div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Daotok / Dao</strong></div>
+                        <div class="actor-name">Tharathon Phumphothingam</div>
+                        <div class="actor-real-name">(Oat)</div>
+                    </div>
+                </div>
+
+                <!-- TIGER -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/pie2.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Suea / Tiger</strong></div>
+                        <div class="actor-name">Saranvut Nittayasuthi</div>
+                        <div class="actor-real-name">(Pie)</div>
+                    </div>
+                </div>
+
+                <!-- NENE (Duen Nao) -->
+                <div class="actor-card">
+                    <div class="actor-image"
+                        style="background: url('img/golf.jpg') no-repeat center center; background-size: cover;"></div>
+                    <div class="actor-info">
+                        <div class="actor-role"><strong>Duen Nao / Nao</strong></div>
+                        <div class="actor-name">Pasatorn Lertsathitwong</div>
+                        <div class="actor-real-name">(Golf)</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NAVEGACIÓN -->
+            <div class="nav-buttons">
+                <a class="btn btn-custom btn-xl rounded-pill mt-5" href="index.html">Inicio</a>
+                <a class="btn btn-custom btn-xl rounded-pill mt-5" href="intro.html">Intro</a>
+                <a class="btn btn-custom btn-xl rounded-pill mt-5" href="libros.html">Libros</a>
+                <a class="btn btn-custom btn-xl rounded-pill mt-5" href="produccion.html">Produccion</a>
+                <a class="btn btn-custom btn-xl rounded-pill mt-5" href="juegos.html">Juegos</a>
+                <a class="btn btn-custom btn-xl rounded-pill mt-5" href="series.html">Serie</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

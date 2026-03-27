@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libros</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400&family=Montserrat:wght@600&family=Lora:wght@500&family=Inter:wght@500&display=swap" rel="stylesheet">
+</head>
+<body class="body-libros">
+    <style>
+        .body-libros {
+            background: url('img/xxxxxxxxxxxxxxxx.png') no-repeat center center fixed;
+            background-position: top center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* ESTILOS PERSONALIZADOS POR LIBRO */
+
+        /* EAST - Playfair Display */
+        .book-east {
+            background: rgba(139, 69, 19, 0.8) !important;
+            border-left: 5px solid #ffd700;
+        }
+        .book-east h3 {
+            font-family: 'Playfair Display', serif;
+            color: #ffd700;
+            font-size: 1.4rem;
+        }
+        .book-east p {
+            font-family: 'Merriweather', serif;
+            color: #fff;
+        }
+        .book-east .btn-link {
+            color: #ffd700;
+        }
+
+        /* NORTH - Montserrat */
+        .book-north {
+            background: rgba(25, 25, 112, 0.8) !important;
+            border-left: 5px solid #ff69b4;
+        }
+        .book-north h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: #ff69b4;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .book-north p {
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+        }
+        .book-north .btn-link {
+            color: #ff69b4;
+        }
+
+        /* SOUTH - Lora */
+        .book-south {
+            background: rgba(70, 130, 180, 0.8) !important;
+            border-left: 5px solid #87ceeb;
+        }
+        .book-south h3 {
+            font-family: 'Lora', serif;
+            color: #87ceeb;
+            font-size: 1.4rem;
+        }
+        .book-south p {
+            font-family: 'Lora', serif;
+            color: #fff;
+            font-style: italic;
+        }
+        .book-south .btn-link {
+            color: #87ceeb;
+        }
+
+        /* WEST - Inter */
+        .book-west {
+            background: rgba(75, 0, 130, 0.8) !important;
+            border-left: 5px solid #dda0dd;
+        }
+        .book-west h3 {
+            font-family: 'Inter', sans-serif;
+            color: #dda0dd;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+        .book-west p {
+            font-family: 'Inter', sans-serif;
+            color: #fff;
+            letter-spacing: 0.3px;
+        }
+        .book-west .btn-link {
+            color: #dda0dd;
+        }
+
+        /* TIGER - Poppins */
+        .book-tiger {
+            background: rgba(184, 134, 11, 0.8) !important;
+            border-left: 5px solid #ff8c00;
+        }
+        .book-tiger h3 {
+            font-family: 'Poppins', sans-serif;
+            color: #ff8c00;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .book-tiger p {
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+        }
+        .book-tiger .btn-link {
+            color: #ff8c00;
+        }
+
+        /* JAYDEN - Merriweather Bold */
+        .book-jayden {
+            background: rgba(128, 0, 32, 0.8) !important;
+            border-left: 5px solid #ff1493;
+        }
+        .book-jayden h3 {
+            font-family: 'Merriweather', serif;
+            color: #ff1493;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+        .book-jayden p {
+            font-family: 'Merriweather', serif;
+            color: #fff;
+            font-weight: 600;
+        }
+        .book-jayden .btn-link {
+            color: #ff1493;
+        }
+    </style>
+
+    <header class="masthead text-center text-white" style="background: linear-gradient(rgba(47,23,15,0.7), rgba(47,23,15,0.7)), url('img/ahoratodos.png'); background-size: cover; padding: 2rem 1rem 1.5rem 1rem;">
+         <a class="btn btn-custom btn-xl rounded-pill mt-5" href="index.html">Inicio</a>
+          <a class="btn btn-custom btn-xl rounded-pill mt-5" href="intro.html">Intro</a>
+          <a class="btn btn-custom btn-xl rounded-pill mt-5" href="libros.html">Libros</a>
+         <a class="btn btn-custom btn-xl rounded-pill mt-5" href="produccion.html">Produccion</a> 
+            <a class="btn btn-custom btn-xl rounded-pill mt-5" href="juegos.html">Juegos</a>
+            <a class="btn btn-custom btn-xl rounded-pill mt-5" href="series.html">Serie</a>
+        <h1 class="site-heading-lower" style="color: #f6e1c5; font-size: 3rem;">Historias de Howlsairy</h1>
+        <p style="color: #f6e1c5; font-size: 1.2rem; margin-top: 0.5rem;">Haz clic en cualquier historia para abrir en Drive y descargar el archivo.</p>
+    </header>
+
+    <section class="page-section">
+        <div class="container">
+            <div class="row row-vertical">
+                <div class="col-12 mb-4">
+                    <div class="libro-card book-east">
+                        <h3>East: Tag! You're Mine</h3>
+                        <p>Easter & Hill. Amor, reencuentro y promesas en Tailandia.</p>
+                        <a class="btn-link" href="https://drive.google.com/drive/folders/1bDGMteJYxqn2dB0AkNvmSg_eOFeFr_8P?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="libro-card book-north">
+                        <h3>North: How Much Is Your Love?</h3>
+                        <p>Johan & North. Deudas, secretos y el precio de cuidarse.</p>
+                        <a class="btn-link" href="https://drive.google.com/drive/folders/1NQ9xLuh0j_ldWE53G1lzpeBHXOQW-AXg?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="libro-card book-south">
+                        <h3>South: Beside the Sky</h3>
+                        <p>Tonfah & Typhoon. Amor silencioso y miedo a perderse.</p>
+                        <a class="btn-link" href="https://drive.google.com/drive/folders/1fxT1SybXw2ZmskUv0XOyFpUCXhPrhqFL?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="libro-card book-west">
+                        <h3>WEST: The Sun from Another Planet</h3>
+                        <p>Relación inesperada y caminos que se cruzan.</p>
+                        <a class="btn-link" href="https://drive.google.com/drive/folders/1zKjTIRIqhs9RhUM3Ej_tahCg0p8N_6Tw?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="libro-card book-tiger">
+                        <h3>This-is-a-Cold-Month</h3>
+                        <p>Momentos cotidianos que se vuelven inolvidables.</p>
+                        <a class="btn-link" href="https://drive.google.com/drive/folders/1AMjeWgHupqVnRXjFTGS5R_WCa5BWwBaD?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
+                    </div>
+                </div>
+                <div class="col-12 mb-4">
+                    <div class="libro-card book-jayden">
+                        <h3>The Owner of the North</h3>
+                        <p>Cierre épico con todas las parejas reunidas.</p>
+                        <a class="btn-link" href="https://drive.google.com/drive/folders/1PiWUyI_KBi3RN40fGiaM9_WX2YFTfgQH?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
