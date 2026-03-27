@@ -472,3 +472,43 @@ p {
   }
 }
 
+@media (max-width: 991px) {
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  left: 0;
+}
+
+.navbar-toggler-icon::before {
+  top: -8px;
+}
+
+.navbar-toggler-icon::after {
+  top: 8px;
+}
+
+.collapse.show {
+  display: block;
+}
