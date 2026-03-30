@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="js/juegos.js">
     <link rel="icon" href="img/intro.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400&family=Montserrat:wght@600&family=Lora:wght@500&family=Inter:wght@500&display=swap" rel="stylesheet">
     <title>Intro</title>
@@ -315,6 +316,14 @@
     <footer class="footer">
         <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
     </footer>
+    <script>
+  const btn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('.menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
 </body>
 
 </html>

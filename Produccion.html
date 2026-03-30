@@ -142,9 +142,11 @@
 <body class="body-produccion">
     <header class="masthead text-center text-white prod-header"
         style="background: linear-gradient(rgba(47, 23, 15, 0.8), rgba(47, 23, 15, 0.8)), url('img/ahoratodos.png'); background-size: cover; padding: 3rem 1rem;">
+        
          </div>
-
-            <!-- NAVEGACIÓN -->
+         <nav id="mainNav">
+        <div class="container">
+         <button class="menu-btn">☰</button>
             <div class="nav-buttons">
                 <a class="btn btn-custom btn-xl rounded-pill mt-5" href="index.html">Inicio</a>
                 <a class="btn btn-custom btn-xl rounded-pill mt-5" href="intro.html">Intro</a>
@@ -314,6 +316,14 @@
     <footer class="footer">
         <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
     </footer>
+    <script>
+  const btn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('.menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
 </body>
 
 </html>
