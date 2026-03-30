@@ -373,35 +373,3 @@ section {
     border-top: 1px solid rgba(255,255,255,0.2);
   }
 }
-
-
-/* NAV */
-#mainNav {
-  background: rgba(47, 23, 15, 0.9);
-  padding: 10px;
-  text-align: center;
-}
-
-/* BOTÓN */
-.menu-btn {
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-
-/* MENÚ */
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
