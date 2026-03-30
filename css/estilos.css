@@ -227,3 +227,95 @@ section {
 }
 
 
+/* 📱 RESPONSIVE MÓVIL REAL */
+@media (max-width: 768px) {
+
+  /* BODY */
+  body {
+    font-size: 0.95rem;
+    overflow-x: hidden;
+  }
+
+  /* HEADER */
+  .site-heading-lower {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  /* MENÚ */
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  /* BOTÓN HAMBURGUESA */
+  .navbar-toggler {
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* MENÚ DESPLEGABLE */
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+
+  /* INTRO */
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-img {
+    max-width: 90%;
+  }
+
+  .intro-text {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  /* TEXTOS */
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  /* SECCIONES */
+  section {
+    padding: 40px 10px;
+  }
+
+  /* BOTONES */
+  .btn-custom {
+    width: 100%;
+    max-width: 300px;
+    font-size: 0.95rem;
+  }
+
+  /* IMÁGENES */
+  img {
+    max-width: 90%;
+  }
+
+  /* FOOTER */
+  .footer p {
+    font-size: 0.8rem;
+  }
+}
