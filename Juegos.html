@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos</title>
     <link rel="stylesheet" href="css/estilos.css">
-</head>
-<body class="body-juegos">
     <style>
         .body-juegos {
             background: url('img/zzzzzzzzzzzzzzz.webp') no-repeat center center fixed;
@@ -15,71 +14,72 @@
             background-repeat: no-repeat;
         }
     </style>
+</head>
 
-    <header class="masthead text-center text-white" url('img/ahoratodos.png'); background-size: cover; padding: 2rem 1rem;">
-        <a class="btn btn-custom btn-xl rounded-pill mt-5" href="index.html">Inicio</a>
-          <a class="btn btn-custom btn-xl rounded-pill mt-5" href="intro.html">Intro</a>
-          <a class="btn btn-custom btn-xl rounded-pill mt-5" href="libros.html">Libros</a>
-         <a class="btn btn-custom btn-xl rounded-pill mt-5" href="produccion.html">Produccion</a> 
-            <a class="btn btn-custom btn-xl rounded-pill mt-5" href="juegos.html">Juegos</a>
-            <a class="btn btn-custom btn-xl rounded-pill mt-5" href="series.html">Serie</a>
-        <h1 class="site-heading-lower" style="color: #f6e1c5; font-size: 3rem;">Juegos de Howlsairy</h1>
-        <p style="color: #f6e1c5; font-size: 1.1rem;">Diviértete con los personajes de la serie</p>
-    </header>
+<body class="body-juegos">
+    <nav id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="intro.html">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="libros.html">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="series.html">Serie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section class="page-section">
         <div class="container">
-            <!-- SOPA DE LETRAS -->
-            <div class="col-12 mb-4">
+            <div class="col-12" style="margin-bottom: 1.5rem;">
                 <div class="libro-card">
-                    <h2>🔤 Sopa de Letras</h2>
-                    <p style="margin-bottom: 1.5rem; color: #666;">Encuentra los nombres de los personajes principales:</p>
+                    <h2>Sopa de Letras</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666; text-align: left;">Encuentra los nombres de los personajes principales:</p>
                     <div id="wordSearchContainer" style="text-align: center; margin-bottom: 1.5rem;"></div>
-                    <p style="font-size: 0.9rem; color: #999;">Palabras a encontrar: HILL, EASTER, JOHAN, NORTH, TONFAH, TYPHOON, HOWLSAIRY</p>
+                    <p style="font-size: 0.9rem; color: #999; text-align: left;">Palabras a encontrar: HILL, EASTER, JOHAN, NORTH, TONFAH, TYPHOON, HOWLSAIRY</p>
                 </div>
             </div>
 
-            <!-- JUEGO DE PAREJAS -->
-            <div class="col-12 mb-4">
+            <div class="col-12" style="margin-bottom: 1.5rem;">
                 <div class="libro-card">
-                    <h2>💑 Enlaza las parejas</h2>
-                    <p style="margin-bottom: 1.5rem; color: #666;">Haz clic en dos cartas para encontrar a los personajes del mismo par (3 parejas):</p>
+                    <h2>Enlaza las parejas</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666; text-align: left;">Haz clic en dos cartas para encontrar a los personajes del mismo par (3 parejas):</p>
                     <div id="matchingGame" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 400px; margin: 0 auto 1.5rem;"></div>
                     <p id="matchStatus" style="text-align: center; font-weight: 700; color: #28a745;"></p>
                 </div>
             </div>
 
-            <!-- QUIZ DE FAN -->
-            <div class="col-12 mb-4">
+            <div class="col-12" style="margin-bottom: 1.5rem;">
                 <div class="libro-card">
-                    <h2>⭐ ¿Qué tan fan eres?</h2>
-                    <p style="margin-bottom: 1.5rem; color: #666;">Responde estas preguntas y descubre tu porcentaje de fan:</p>
+                    <h2>Que tan fan eres?</h2>
+                    <p style="margin-bottom: 1.5rem; color: #666; text-align: left;">Responde estas preguntas y descubre tu porcentaje de fan:</p>
                     <div id="quizContainer"></div>
-                    <button id="submitQuiz" class="btn btn-custom btn-xl rounded-pill" style="margin-top: 1.5rem;">Ver mi porcentaje</button>
+                    <button id="submitQuiz" class="btn-custom" style="margin-top: 1.5rem;">Ver mi porcentaje</button>
                     <div id="quizResult" style="text-align: center; margin-top: 2rem; font-weight: 700; font-size: 1.3rem; color: #28a745;"></div>
                 </div>
-            </div>
-
-            <!-- REGRESAR -->
-            <div class="col-12 mb-4">
             </div>
         </div>
     </section>
 
-    <script src="js/juegos.js" defer></script>
-    </script>
-    <script src="js/juegos.js" defer></script>
-    
     <footer class="footer">
         <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
     </footer>
-        <script>
-              const btn = document.querySelector('.menu-btn');
-  const menu = document.querySelector('.menu');
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-        </script>
+    <script src="js/juegos.js" defer></script>
+    <script>
+        const btn = document.querySelector('.navbar-toggler');
+        const menu = document.querySelector('#menuPrincipal');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
+
 </html>

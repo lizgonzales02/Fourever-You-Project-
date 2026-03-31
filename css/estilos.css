@@ -28,7 +28,7 @@ body {
 }
 
 .site-heading-lower {
-  color: #f6e1c5;
+  color: #facc8f;
   font-size: 2.5rem;
 }
 
@@ -36,14 +36,13 @@ body {
 #mainNav {
   background-color: rgba(47, 23, 15, 0.9);
   padding: 1rem 0;
+  text-align: center;
 }
 
-/* 🔥 QUITA LOS PUNTOS */
 .navbar-nav {
   list-style: none;
   padding: 0;
   margin: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,25 +50,24 @@ body {
   gap: 10px;
 }
 
-/* ITEMS */
 .nav-item {
   display: inline-block;
 }
 
-/* LINKS */
 .nav-link {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(235, 201, 201, 0.8);
   font-weight: 700;
   padding: 8px 14px;
+  text-transform: uppercase;
   transition: 0.3s;
 }
 
 .nav-link:hover {
-  color: #e6a756;
+  color: #e7c598;
 }
 
-/* BOTÓN HAMBURGUESA */
+/* BOTON HAMBURGUESA */
 .navbar-toggler {
   background: none;
   border: none;
@@ -78,7 +76,6 @@ body {
   margin: auto;
 }
 
-/* ICONO */
 .navbar-toggler-icon {
   display: block;
   width: 30px;
@@ -115,7 +112,7 @@ body {
   display: block;
 }
 
-/* 💻 DESKTOP */
+/* DESKTOP */
 @media (min-width: 768px) {
   .navbar-collapse {
     display: flex !important;
@@ -134,28 +131,29 @@ body {
   margin: auto;
 }
 
-/* INTRO */
+/* INTRO HOME */
 .intro {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
-/* IMAGEN */
 .intro-img {
-  max-width: 300px;
+  max-width: 350px;
   width: 100%;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
-/* TEXTO */
 .intro-text {
   max-width: 500px;
+  width: 100%;
   text-align: center;
+  flex-shrink: 0;
 }
 
-/* TARJETA */
 .bg-faded {
   background: rgba(255, 255, 255, 0.9);
   padding: 2rem;
@@ -163,7 +161,7 @@ body {
 }
 
 /* SECCIONES */
-section {
+section, .page-section {
   padding: 60px 20px;
 }
 
@@ -175,6 +173,8 @@ section {
 .cta-inner {
   padding: 2rem;
   border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  text-align: center;
 }
 
 /* FOOTER */
@@ -187,62 +187,129 @@ section {
 .footer p {
   color: #f6e1c5;
   font-size: 0.9rem;
+  margin: 0;
 }
 
-/* 📱 MÓVIL */
-@media (max-width: 576px) {
-  .site-heading-lower {
-    font-size: 1.8rem;
-  }
-
-  .nav-link {
-    display: block;
-    padding: 10px;
-  }
-
-  section {
-    padding: 40px 10px;
-  }
-
-  .intro {
-    flex-direction: column;
-  }
-}
-
+/* BOTON PERSONALIZADO */
 .btn-custom {
-    background-color: #793917; /* marroncito */
-    color: rgb(243, 224, 224);
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-   background-position: center;
-    background-size: cover;
+  background-color: #793917;
+  color: rgb(243, 224, 224);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .btn-custom:hover {
-    background-color: #5a321f;
-    color: white;
+  background-color: #5a321f;
+  color: white;
 }
 
+/* UTILIDADES */
+.text-center { text-align: center; }
+.text-white { color: #fff; }
+.text-uppercase { text-transform: uppercase; }
+.img-fluid { max-width: 100%; height: auto; }
+.rounded { border-radius: 8px; }
+.rounded-circle { border-radius: 50%; }
 
-/* 📱 RESPONSIVE MÓVIL REAL */
+/* GRID BASICO */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.col {
+  flex: 1;
+  min-width: 280px;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* LIBRO CARD */
+.libro-card {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.libro-card h2, .libro-card h3 {
+  color: #2c2c2c;
+}
+
+.libro-card p {
+  color: #555;
+  text-align: left;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 8px 16px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-link:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* MASTHEAD */
+.masthead {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.masthead-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.masthead-subheading {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.section-heading {
+  margin-bottom: 1rem;
+}
+
+.section-heading-upper {
+  display: block;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+}
+
+.section-heading-lower {
+  display: block;
+  font-size: 1.8rem;
+  color: #2c2c2c;
+}
+
+/* RESPONSIVE MOVIL */
 @media (max-width: 768px) {
-
-  /* BODY */
   body {
     font-size: 0.95rem;
     overflow-x: hidden;
   }
 
-  /* HEADER */
   .site-heading-lower {
     font-size: 1.8rem;
     text-align: center;
   }
 
-  /* MENÚ */
   .navbar-nav {
     flex-direction: column;
     align-items: center;
@@ -254,13 +321,11 @@ section {
     padding: 8px;
   }
 
-  /* BOTÓN HAMBURGUESA */
   .navbar-toggler {
     display: block;
     margin: 10px auto;
   }
 
-  /* MENÚ DESPLEGABLE */
   .navbar-collapse {
     display: none;
   }
@@ -269,8 +334,8 @@ section {
     display: block;
   }
 
-  /* INTRO */
   .intro {
+    flex-wrap: wrap;
     flex-direction: column;
     text-align: center;
   }
@@ -280,16 +345,14 @@ section {
   }
 
   .intro-text {
+    max-width: 100%;
     width: 100%;
     padding: 1rem;
   }
 
-  /* TEXTOS */
   h1 {
     font-size: 1.5rem;
     text-align: center;
-    height: auto;
-    
   }
 
   h2 {
@@ -300,79 +363,44 @@ section {
     font-size: 0.95rem;
   }
 
-  /* SECCIONES */
-  section {
+  section, .page-section {
     padding: 40px 10px;
   }
 
-  /* BOTONES */
   .btn-custom {
     width: 100%;
     max-width: 300px;
     font-size: 0.95rem;
   }
 
-  /* IMÁGENES */
   img {
     max-width: 90%;
   }
 
-  /* FOOTER */
   .footer p {
     font-size: 0.8rem;
   }
-}
 
-/* NAV */
-#mainNav {
-  background: rgba(47, 23, 15, 0.9);
-  padding: 10px;
-  text-align: center;
-}
-
-/* BOTÓN */
-.menu-btn {
-  font-size: 24px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  display: none;
-}
-
-/* MENÚ */
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* 📱 CELULAR */
-@media (max-width: 768px) {
-
-  .menu-btn {
-    display: block;
-    margin: auto;
-  }
-
-  .menu {
-    display: none;
+  .row {
     flex-direction: column;
-    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .site-heading-lower {
+    font-size: 1.8rem;
   }
 
-  .menu.show {
-    display: flex;
-  }
-
-  .menu a {
+  .nav-link {
+    display: block;
     padding: 10px;
-    border-top: 1px solid rgba(255,255,255,0.2);
+  }
+
+  section, .page-section {
+    padding: 40px 10px;
+  }
+
+  .intro {
+    flex-direction: column;
   }
 }

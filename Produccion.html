@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,6 @@
             background-repeat: no-repeat;
         }
 
-        /* ESTILOS PRODUCCIÓN */
         .prod-header h1 {
             font-family: 'Playfair Display', serif;
             color: #2c2c2c;
@@ -40,11 +39,31 @@
         }
 
         .section-card {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+            background: linear-gradient(
+                rgba(255, 248, 220, 0.95),
+                rgba(245, 222, 179, 0.95)
+            );
+            background-size: cover;
+            background-blend-mode: multiply;
+            padding: 2rem 2.5rem;
+            border-radius: 18px;
+            border: 3px solid #d4af37;
+            box-shadow:
+                0 0 12px rgba(212, 175, 55, 0.6),
+                0 0 25px rgba(212, 175, 55, 0.3),
+                0 10px 30px rgba(0, 0, 0, 0.5);
             margin-bottom: 2rem;
+            color: #4b2e15;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-card::before {
+            content: "";
+            position: absolute;
+            inset: 10px;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+            border-radius: 12px;
         }
 
         .section-card h3 {
@@ -60,9 +79,16 @@
             color: #555;
             line-height: 1.8;
             font-size: 1rem;
+            text-align: left;
         }
 
-        /* CAST GRID */
+        .section-card .nested-block {
+            margin-top: 1rem;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+        }
+
         .cast-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -125,98 +151,69 @@
             color: #2c2c2c;
             font-weight: 600;
         }
-
-        /* BUTTONS */
-        .nav-buttons {
-            text-align: center;
-            margin-top: 3rem;
-            padding: 2rem 0;
-        }
-
-        .nav-buttons a {
-            margin: 0 0.8rem;
-        }
-
-        h1, h2, h3 {
-            color: #2c2c2c;
-            text-align: center;
-            height: auto;
-        }
-        p {
-            color: #555;
-            text-align: center;
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
     </style>
 </head>
 
 <body class="body-produccion">
-    <header class="masthead text-center text-white prod-header"
-        style="background: linear-gradient url('img/ahoratodos.png'); background-size: cover; padding: 3rem 1rem;">
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <nav id="mainNav">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="intro.html">Intro</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="libros.html">Libros</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
-                            href="produccion.html">Produccion</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="juegos.html">Juegos</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="series.html">Serie</a></li>
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="intro.html">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="libros.html">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="series.html">Serie</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-        <h1 >Producción: ¡La novela será serie tailandesa!</h1>
-        <p>Estamos trabajando en la adaptación a serie. Conoce al elenco confirmado.</p>
+
+    <header class="masthead text-center text-white prod-header">
+        <h1>Produccion: La novela sera serie tailandesa!</h1>
+        <p>Estamos trabajando en la adaptacion a serie. Conoce al elenco confirmado.</p>
     </header>
 
     <section class="page-section">
         <div class="container">
-            <!-- DETALLES DE PRODUCCIÓN -->
-            <div class="section-title">Detalles de la Producción</div>
+            <div class="section-title">Detalles de la Produccion</div>
             <div class="section-card">
                 <h3>Studio Wabi Sabi Revoluciona el BL</h3>
                 <p>Studio Wabi Sabi revoluciona el BL con el estreno de "Fourever You Project".
-                    La industria del entretenimiento tailandés marca un nuevo hito con el lanzamiento de "Fourever You
+                    La industria del entretenimiento tailandes marca un nuevo hito con el lanzamiento de "Fourever You
                     Project",
-                    la ambiciosa adaptación televisiva de las populares novelas de la autora Howlsairy. Producida por la
+                    la ambiciosa adaptacion televisiva de las populares novelas de la autora Howlsairy. Producida por la
                     reconocida casa Studio Wabi Sabi,
-                    la serie inició sus transmisiones oficiales el 3 de octubre de 2024, consolidándose rápidamente como
-                    uno de los estrenos
-                    más esperados del género.
-                <div>
-                    Producción y Dirección de Alto Nivel
-                    Bajo el sello de Studio Wabi Sabi, el proyecto cuenta con la dirección de dos figuras clave en el
-                    drama tailandés:
+                    la serie inicio sus transmisiones oficiales el 3 de octubre de 2024, consolidandose rapidamente como
+                    uno de los estrenos mas esperados del genero.</p>
+                <div class="nested-block">
+                    <strong>Produccion y Direccion de Alto Nivel</strong><br>
+                    Bajo el sello de Studio Wabi Sabi, el proyecto cuenta con la direccion de dos figuras clave en el
+                    drama tailandes:
                     Siwaj Sawatmaneekul (conocido como New Siwaj) y Nantalit Tampacha (Ko).
                     El guion, que entrelaza cuatro historias basadas en los puntos cardinales (Norte, Sur, Este y
                     Oeste),
                     fue desarrollado por Rampha Phetchart y Utchariyakorn Sirikam
                 </div>
-                </p>
             </div>
 
             <div class="section-card">
-                <h3>Dirección y Producción</h3>
+                <h3>Direccion y Produccion</h3>
                 <p><strong>Directores:</strong> Siwaj Sawatmaneekul (New Siwaj) y Nantalit Tampacha (Ko). El guion, que
                     entrelaza cuatro historias basadas en los puntos cardinales (Norte, Sur, Este y Oeste), fue
                     desarrollado por Rampha Phetchart y Utchariyakorn Sirikam. La serie consta de 17 episodios, emitida
-                    originalmente por GMM 25, con versión UNCUT disponible en WeTV.</p>
+                    originalmente por GMM 25, con version UNCUT disponible en WeTV.</p>
             </div>
 
-            <!-- ELENCO DE ESTRELLAS -->
             <div class="section-title" style="margin-top: 3rem;">Elenco de Estrellas</div>
             <p style="text-align: center; color: #666; margin-bottom: 2rem; font-family: 'Inter', sans-serif;">Conoce a
                 los actores que dan vida a las historias de Howlsairy</p>
 
             <div class="cast-grid">
-                <!-- EAST: Hill -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/dhjk.jpg') no-repeat center center; background-size: cover;"></div>
@@ -227,7 +224,6 @@
                     </div>
                 </div>
 
-                <!-- EAST: Easter -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/earth.jpg') no-repeat center center; background-size: cover;"></div>
@@ -238,7 +234,6 @@
                     </div>
                 </div>
 
-                <!-- NORTH: Johan -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/marky.jpg') no-repeat center center; background-size: cover;"></div>
@@ -249,7 +244,6 @@
                     </div>
                 </div>
 
-                <!-- NORTH: North -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/bass.jpg') no-repeat center center; background-size: cover;"></div>
@@ -260,7 +254,6 @@
                     </div>
                 </div>
 
-                <!-- SOUTH: Tonfah -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/faf.jpg') no-repeat center center; background-size: cover;"></div>
@@ -271,7 +264,6 @@
                     </div>
                 </div>
 
-                <!-- SOUTH: Typhoon -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/poond.webp') no-repeat center center; background-size: cover;"></div>
@@ -282,7 +274,6 @@
                     </div>
                 </div>
 
-                <!-- WEST: Arthit -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/arthi.jpg') no-repeat center center; background-size: cover;"></div>
@@ -293,7 +284,6 @@
                     </div>
                 </div>
 
-                <!-- WEST: Daotok -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/daoooooo.jpg') no-repeat center center; background-size: cover;">
@@ -305,7 +295,6 @@
                     </div>
                 </div>
 
-                <!-- TIGER -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/pie2.jpg') no-repeat center center; background-size: cover;"></div>
@@ -316,7 +305,6 @@
                     </div>
                 </div>
 
-                <!-- NENE (Duen Nao) -->
                 <div class="actor-card">
                     <div class="actor-image"
                         style="background: url('img/golf.jpg') no-repeat center center; background-size: cover;"></div>
@@ -326,20 +314,22 @@
                         <div class="actor-real-name">(Golf)</div>
                     </div>
                 </div>
-           
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
         <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
     </footer>
-    <script>
-  const btn = document.querySelector('.menu-btn');
-  const menu = document.querySelector('.menu');
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-</script>
+    <script>
+        const btn = document.querySelector('.navbar-toggler');
+        const menu = document.querySelector('#menuPrincipal');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>

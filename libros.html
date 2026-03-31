@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libros</title>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400&family=Montserrat:wght@600&family=Lora:wght@500&family=Inter:wght@500&display=swap" rel="stylesheet">
-</head>
-<body class="body-libros">
     <style>
         .body-libros {
             background: url('img/xxxxxxxxxxxxxxxx.webp') no-repeat center center fixed;
@@ -15,7 +14,7 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        /* EAST - Playfair Display */
+
         .book-east {
             background: rgba(139, 69, 19, 0.8) !important;
             border-left: 5px solid #ffd700;
@@ -33,7 +32,6 @@
             color: #ffd700;
         }
 
-        /* NORTH - Montserrat */
         .book-north {
             background: rgba(25, 25, 112, 0.8) !important;
             border-left: 5px solid #ff69b4;
@@ -52,7 +50,6 @@
             color: #ff69b4;
         }
 
-        /* SOUTH - Lora */
         .book-south {
             background: rgba(70, 130, 180, 0.8) !important;
             border-left: 5px solid #87ceeb;
@@ -71,7 +68,6 @@
             color: #87ceeb;
         }
 
-        /* WEST - Inter */
         .book-west {
             background: rgba(75, 0, 130, 0.8) !important;
             border-left: 5px solid #dda0dd;
@@ -91,7 +87,6 @@
             color: #dda0dd;
         }
 
-        /* TIGER - Poppins */
         .book-tiger {
             background: rgba(184, 134, 11, 0.8) !important;
             border-left: 5px solid #ff8c00;
@@ -110,7 +105,6 @@
             color: #ff8c00;
         }
 
-        /* JAYDEN - Merriweather Bold */
         .book-jayden {
             background: rgba(128, 0, 32, 0.8) !important;
             border-left: 5px solid #ff1493;
@@ -129,82 +123,82 @@
         .book-jayden .btn-link {
             color: #ff1493;
         }
-        h1, h2, h3 {
-            color: #2c2c2c;
-            text-align: center;
-            height: auto;
-        }
-        p {
-            color: #555;
-            text-align: center;
-            font-size: 1.1rem;
-            line-height: 1.6;
+
+        .books-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
         }
 
+        .book-item {
+            width: 100%;
+        }
     </style>
+</head>
 
-    <header class="masthead text-center text-white" url('img/xxxxxxxxxxxxxxxx.webp'); background-size: cover; padding: 2rem 1rem 1.5rem 1rem;">
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+<body class="body-libros">
+    <nav id="mainNav">
         <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="intro.html">Intro</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="libros.html">Libros</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
-                            href="produccion.html">Produccion</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="juegos.html">Juegos</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="series.html">Serie</a></li>
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="intro.html">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="libros.html">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="series.html">Serie</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <header class="masthead text-center text-white">
         <h1 class="site-heading-lower" style="color: #f6e1c5; font-size: 3rem;">Historias de Howlsairy</h1>
         <p style="color: #f6e1c5; font-size: 1.2rem; margin-top: 0.5rem;">Haz clic en cualquier historia para abrir en Drive y descargar el archivo.</p>
     </header>
 
     <section class="page-section">
         <div class="container">
-            <div class="row row-vertical">
-                <div class="col-12 mb-4">
+            <div class="books-container">
+                <div class="book-item">
                     <div class="libro-card book-east">
                         <h3>East: Tag! You're Mine</h3>
                         <p>Easter & Hill. Amor, reencuentro y promesas en Tailandia.</p>
                         <a class="btn-link" href="https://drive.google.com/drive/folders/1bDGMteJYxqn2dB0AkNvmSg_eOFeFr_8P?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
                     </div>
                 </div>
-                <div class="col-12 mb-4">
+                <div class="book-item">
                     <div class="libro-card book-north">
                         <h3>North: How Much Is Your Love?</h3>
                         <p>Johan & North. Deudas, secretos y el precio de cuidarse.</p>
                         <a class="btn-link" href="https://drive.google.com/drive/folders/1NQ9xLuh0j_ldWE53G1lzpeBHXOQW-AXg?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
                     </div>
                 </div>
-                <div class="col-12 mb-4">
+                <div class="book-item">
                     <div class="libro-card book-south">
                         <h3>South: Beside the Sky</h3>
                         <p>Tonfah & Typhoon. Amor silencioso y miedo a perderse.</p>
                         <a class="btn-link" href="https://drive.google.com/drive/folders/1fxT1SybXw2ZmskUv0XOyFpUCXhPrhqFL?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
                     </div>
                 </div>
-                <div class="col-12 mb-4">
+                <div class="book-item">
                     <div class="libro-card book-west">
                         <h3>WEST: The Sun from Another Planet</h3>
-                        <p>Relación inesperada y caminos que se cruzan.</p>
+                        <p>Relacion inesperada y caminos que se cruzan.</p>
                         <a class="btn-link" href="https://drive.google.com/drive/folders/1zKjTIRIqhs9RhUM3Ej_tahCg0p8N_6Tw?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
                     </div>
                 </div>
-                <div class="col-12 mb-4">
+                <div class="book-item">
                     <div class="libro-card book-tiger">
                         <h3>This is a Cold Month</h3>
                         <p>Momentos cotidianos que se vuelven inolvidables.</p>
                         <a class="btn-link" href="https://drive.google.com/drive/folders/1AMjeWgHupqVnRXjFTGS5R_WCa5BWwBaD?usp=drive_link" target="_blank" rel="noopener">Descargar en Drive</a>
                     </div>
                 </div>
-                <div class="col-12 mb-4">
+                <div class="book-item">
                     <div class="libro-card book-jayden">
                         <h3>The Owner of the North</h3>
                         <p>El cuidado del amor</p>
@@ -214,17 +208,19 @@
             </div>
         </div>
     </section>
-    
+
     <footer class="footer">
         <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
     </footer>
-    <script>
-  const btn = document.querySelector('.menu-btn');
-  const menu = document.querySelector('.menu');
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-</script>
+    <script>
+        const btn = document.querySelector('.navbar-toggler');
+        const menu = document.querySelector('#menuPrincipal');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
+
 </html>

@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="js/juegos.js">
     <link rel="icon" href="img/intro.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400&family=Montserrat:wght@600&family=Lora:wght@500&family=Inter:wght@500&display=swap" rel="stylesheet">
     <title>Intro</title>
-</head>
-
-<body class="body-intro">
     <style>
         .body-intro {
             background: url('img/zzzzzzzzzzzzzzz.webp') no-repeat center center fixed;
@@ -19,52 +15,19 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-    </style>
-        <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Inicio</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="intro.html">Intro</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="libros.html">Libros</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase"
-                            href="produccion.html">Produccion</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="juegos.html">Juegos</a></li>
-                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="series.html">Serie</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <header class="masthead text-center text-white">
-                <h1 class="masthead-heading mb-0">Sipnosis de las 6 novelas</h1>
-                <h2 class="masthead-subheading mb-0">En los libros de Howlsairy, cada detalle cuenta: desde el pasado
-                    oculto de Johan
-                    hasta la dulzura infinita de Phoon. ¡Y ni hablemos de cuando aparecen las parejas
-                    "extra" como Tiger-Duennao o el hermano de Duen!
-                    Es como si todos formaran una gran familia universitaria en la que queremos vivir.</h2>
-                <style>   
-                    h1 {
-                        color: #f7f4f5;
-                        text-align: center;
-                        height: auto;
-                    }
 
-                    h2 {
-                        color: #edf0eef5;
-                        font-size: 200%;
-                        line-height: 1.4;
-                        margin: 0px 0;
-                    }
-                </style>
-        <div class="bg-circle-1 bg-circle"></div>
-        <div class="bg-circle-2 bg-circle"></div>
-        <div class="bg-circle-3 bg-circle"></div>
-        <div class="bg-circle-4 bg-circle"></div>
-    </header>
-    <style>
+        h1 {
+            color: #f7f4f5;
+            text-align: center;
+        }
+
+        h2 {
+            color: #edf0eef5;
+            font-size: 200%;
+            line-height: 1.4;
+            margin: 0px 0;
+        }
+
         p {
             color: #f0eeeb;
             font-size: 150%;
@@ -73,11 +36,23 @@
             margin: 0px 0;
         }
 
-        
+        .bg-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0.1;
+        }
+
+        .bg-circle-1 { background: #ffd700; top: 10%; left: 5%; }
+        .bg-circle-2 { background: #ff69b4; top: 20%; right: 10%; }
+        .bg-circle-3 { background: #87ceeb; bottom: 15%; left: 15%; }
+        .bg-circle-4 { background: #dda0dd; bottom: 10%; right: 5%; }
+
         /* EAST - Playfair Display */
-        .story-east .p-5 {
+        .story-east .story-content {
             background: rgba(139, 69, 19, 0.6);
-            padding: 2rem ;
+            padding: 2rem;
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
@@ -95,9 +70,9 @@
         }
 
         /* NORTH - Montserrat */
-        .story-north .p-5 {
+        .story-north .story-content {
             background: rgba(25, 25, 112, 0.6);
-            padding: 2rem !important;
+            padding: 2rem;
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
@@ -115,9 +90,9 @@
         }
 
         /* SOUTH - Lora */
-        .story-south .p-5 {
+        .story-south .story-content {
             background: rgba(70, 130, 180, 0.6);
-            padding: 2rem !important;
+            padding: 2rem;
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
@@ -136,9 +111,9 @@
         }
 
         /* WEST - Inter */
-        .story-west .p-5 {
+        .story-west .story-content {
             background: rgba(75, 0, 130, 0.6);
-            padding: 2rem !important;
+            padding: 2rem;
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
@@ -157,9 +132,9 @@
         }
 
         /* TIGER - Poppins */
-        .story-tiger .p-5 {
+        .story-tiger .story-content {
             background: rgba(184, 134, 11, 0.6);
-            padding: 2rem !important;
+            padding: 2rem;
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
@@ -177,9 +152,9 @@
         }
 
         /* JAYDEN - Merriweather Bold */
-        .story-jayden .p-5 {
+        .story-jayden .story-content {
             background: rgba(128, 0, 32, 0.6);
-            padding: 2rem !important;
+            padding: 2rem;
             border-radius: 10px;
             backdrop-filter: blur(5px);
         }
@@ -196,24 +171,76 @@
             color: #fff;
             font-weight: 700;
         }
-    </style>
 
-    <section id="scroll" class="story-east">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col order-lg-2">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="img/ter y hill.webp" alt="..." /></div>
+        .story-section {
+            padding: 60px 20px;
+        }
+
+        .story-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .story-grid .col {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .story-img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body class="body-intro">
+    <nav id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="intro.html">Intro</a></li>
+                    <li class="nav-item"><a class="nav-link" href="libros.html">Libros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="series.html">Serie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead text-center text-white" style="position: relative;">
+        <h1 class="masthead-heading">Sipnosis de las 6 novelas</h1>
+        <h2 class="masthead-subheading">En los libros de Howlsairy, cada detalle cuenta: desde el pasado
+            oculto de Johan hasta la dulzura infinita de Phoon. Y ni hablemos de cuando aparecen las parejas
+            "extra" como Tiger-Duennao o el hermano de Duen!
+            Es como si todos formaran una gran familia universitaria en la que queremos vivir.</h2>
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-circle bg-circle-3"></div>
+        <div class="bg-circle bg-circle-4"></div>
+    </header>
+
+    <section class="story-section story-east">
+        <div class="container">
+            <div class="story-grid">
+                <div class="col">
+                    <div><img class="story-img img-fluid" src="img/ter y hill.webp" alt="Hill & Easter" /></div>
                 </div>
-                <div class="col order-lg-1">
-                    <div class="p-5">
-                        
-                        <h2 class="display-4">East: Tag! You're Mine (Hill & Easter)</h2>
-                        <p>Easter decide estudiar en el norte de Tailandia para alejarse de los recuerdos 
-                            de su relación pasada que terminó de forma incierta.
+                <div class="col">
+                    <div class="story-content">
+                        <h2>East: Tag! You're Mine (Hill & Easter)</h2>
+                        <p>Easter decide estudiar en el norte de Tailandia para alejarse de los recuerdos
+                            de su relacion pasada que termino de forma incierta.
                             Sin embargo, el destino hace que se reencuentre en la misma
                             universidad con su
                             exnovio, Hill, un brillante estudiante de medicina que lo ha estado esperando.
-                            La historia explora la sanación y el reencuentro de dos personas que nunca dejaron de
+                            La historia explora la sanacion y el reencuentro de dos personas que nunca dejaron de
                             quererse,
                             superando las inseguridades que los separaron en el instituto.</p>
                     </div>
@@ -221,100 +248,104 @@
             </div>
         </div>
     </section>
-    <section class="story-north">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
+
+    <section class="story-section story-north">
+        <div class="container">
+            <div class="story-grid">
                 <div class="col">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="img/north.webp" alt="..." /></div>
+                    <div><img class="story-img img-fluid" src="img/north.webp" alt="Johan & North" /></div>
                 </div>
                 <div class="col">
-                    <div class="p-5">
-                        <h2 class="display-4">North: How Much Is Your Love? (Johan & North)</h2>
-                        <p>North es un estudiante alegre y algo caótico que, tras una pelea de borrachos,
+                    <div class="story-content">
+                        <h2>North: How Much Is Your Love? (Johan & North)</h2>
+                        <p>North es un estudiante alegre y algo caotico que, tras una pelea de borrachos,
                             termina debiendo una gran suma de dinero. Johan, un estudiante de medicina serio y posesivo,
                             se convierte en su "acreedor". Lo que North no sabe es que Johan ha estado enamorado
-                            de él en secreto desde la secundaria y aprovechó esta situación para finalmente acercarse a
-                            él y protegerlo</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="story-south">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col order-lg-2">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="img/poon.jpg" alt="..." /></div>
-                </div>
-                <div class="col order-lg-1">
-                    <div class="p-5">
-                        <h2 class="display-4">South: Beside the Sky (Tonfah & Typhoon)</h2>
-                        <p>Typhoon ha vivido idealizando a Tonfah (Fa) desde que eran niños, viéndolo como un "cielo
-                            inalcanzable".
-                            Se muda de ciudad solo para estar cerca de él, con la intención de amarlo en secreto y
-                            sin esperar ser correspondido. Por otro lado, Tonfah, quien parece ser el "príncipe
-                            perfecto",
-                            siempre ha intentado acercarse a Typhoon,
-                            pero este lo rechazaba por miedo a salir lastimado de su propia fantasía.</p>
+                            de el en secreto desde la secundaria y aprovecho esta situacion para finalmente acercarse a
+                            el y protegerlo</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="story-west">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col order-lg-2">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="img/dao.webp" alt="..." /></div>
+    <section class="story-section story-south">
+        <div class="container">
+            <div class="story-grid">
+                <div class="col">
+                    <div><img class="story-img img-fluid" src="img/poon.jpg" alt="Tonfah & Typhoon" /></div>
                 </div>
-                <div class="col order-lg-1">
-                    <div class="p-5">
-                        <h2 class="display-4">West: The Sun From Another Star (Arthit & Daotok)</h2>
-                        <p>Esta es la historia con tintes más sobrenaturales del proyecto.
-                            Daotok es un chico artístico y solitario que tiene la capacidad de ver espíritus.
+                <div class="col">
+                    <div class="story-content">
+                        <h2>South: Beside the Sky (Tonfah & Typhoon)</h2>
+                        <p>Typhoon ha vivido idealizando a Tonfah (Fa) desde que eran ninos, viendolo como un "cielo
+                            inalcanzable".
+                            Se muda de ciudad solo para estar cerca de el, con la intencion de amarlo en secreto y
+                            sin esperar ser correspondido. Por otro lado, Tonfah, quien parece ser el "principe
+                            perfecto",
+                            siempre ha intentado acercarse a Typhoon,
+                            pero este lo rechazaba por miedo a salir lastimado de su propia fantasia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-section story-west">
+        <div class="container">
+            <div class="story-grid">
+                <div class="col">
+                    <div><img class="story-img img-fluid" src="img/dao.webp" alt="Arthit & Daotok" /></div>
+                </div>
+                <div class="col">
+                    <div class="story-content">
+                        <h2>West: The Sun From Another Star (Arthit & Daotok)</h2>
+                        <p>Esta es la historia con tintes mas sobrenaturales del proyecto.
+                            Daotok es un chico artistico y solitario que tiene la capacidad de ver espiritus.
                             Su vecino, Arthit, un estudiante de medicina rebelde y solitario, lo convence de ayudarlo a
                             buscar el
                             alma de su difunta madre. A medida que conviven y se enfrentan a situaciones fuera de lo
-                            común,
+                            comun,
                             ambos comienzan a abrir sus corazones, que estaban cerrados debido a traumas del pasado</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="story-tiger">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col order-lg-2">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="img/tiguer.webp" alt="..." /></div>
+
+    <section class="story-section story-tiger">
+        <div class="container">
+            <div class="story-grid">
+                <div class="col">
+                    <div><img class="story-img img-fluid" src="img/tiguer.webp" alt="Tiger & Duen Nao" /></div>
                 </div>
-                <div class="col order-lg-1">
-                    <div class="p-5">
-                        <h2 class="display-4">Tiger & Duen Nao: Lately It's Winter Season</h2>
+                <div class="col">
+                    <div class="story-content">
+                        <h2>Tiger & Duen Nao: Lately It's Winter Season</h2>
                         <p>Esta historia se centra en Tiger, el hijo menor de un poderoso jefe de la mafia,
                             quien lleva una vida imprudente y sin rumbo fijo debido a conflictos familiares.
-                            Todo cambia cuando conoce a Duen Nao (también llamado December),
-                            un estudiante de buen corazón, alegre y siempre dispuesto a ayudar a los demás</p>
+                            Todo cambia cuando conoce a Duen Nao (tambien llamado December),
+                            un estudiante de buen corazon, alegre y siempre dispuesto a ayudar a los demas</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="story-jayden">
-        <div class="container px-5">
-            <div class="row gx-5 align-items-center">
-                <div class="col order-lg-2">
-                    <div class="p-5"><img class="img-fluid rounded-circle" src="img/hermandi de na.webp" alt="..." />
+
+    <section class="story-section story-jayden">
+        <div class="container">
+            <div class="story-grid">
+                <div class="col">
+                    <div><img class="story-img img-fluid" src="img/hermandi de na.webp" alt="Jayden & Dan Nuea" />
                     </div>
                 </div>
-                <div class="col-lg-6 order-lg-1">
-                    <div class="p-5">
-                        <h2 class="display-4">Jayden & Dan Nuea </h2>
-                        <p>La historia da un giro dramático cuando Dan Nuea
+                <div class="col">
+                    <div class="story-content">
+                        <h2>Jayden & Dan Nuea</h2>
+                        <p>La historia da un giro dramatico cuando Dan Nuea
                             (el hermano gemelo de Duen Nao) es secuestrado por error.
-                            Los captores lo confunden con su hermano Nao debido a su parecido físico,
-                            Mientras está retenido, Dan Nuea conoce a Jayden, quien también se encuentra cautivo en el
+                            Los captores lo confunden con su hermano Nao debido a su parecido fisico.
+                            Mientras esta retenido, Dan Nuea conoce a Jayden, quien tambien se encuentra cautivo en el
                             mismo lugar.
                             A pesar de las circunstancias extremas y brutales,
                             Dan intenta ofrecerle apoyo emocional a Jayden.</p>
@@ -323,18 +354,19 @@
             </div>
         </div>
     </section>
-    
+
     <footer class="footer">
         <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
     </footer>
-    <script>
-  const btn = document.querySelector('.menu-btn');
-  const menu = document.querySelector('.menu');
 
-  btn.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
-</script>
+    <script>
+        const btn = document.querySelector('.navbar-toggler');
+        const menu = document.querySelector('#menuPrincipal');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('show');
+        });
+    </script>
 </body>
 
 </html>
