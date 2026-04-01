@@ -16,24 +16,24 @@
             background-repeat: no-repeat;
         }
 
-        h1 {
+        .masthead {
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        .masthead h1 {
             color: #f7f4f5;
             text-align: center;
+            font-size: 2.5rem;
         }
 
-        h2 {
+        .masthead h2 {
             color: #edf0eef5;
-            font-size: 200%;
-            line-height: 1.4;
-            margin: 0px 0;
-        }
-
-        p {
-            color: #f0eeeb;
-            font-size: 150%;
+            font-size: 1.3rem;
             line-height: 1.6;
-            text-align: justify;
-            margin: 0px 0;
+            margin: 0 auto;
+            max-width: 800px;
+            text-align: center;
         }
 
         .bg-circle {
@@ -48,129 +48,6 @@
         .bg-circle-2 { background: #ff69b4; top: 20%; right: 10%; }
         .bg-circle-3 { background: #87ceeb; bottom: 15%; left: 15%; }
         .bg-circle-4 { background: #dda0dd; bottom: 10%; right: 5%; }
-
-        /* EAST - Playfair Display */
-        .story-east .story-content {
-            background: rgba(139, 69, 19, 0.6);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-        }
-        .story-east h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.2rem;
-            color: #ffd700;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 1rem;
-        }
-        .story-east p {
-            font-family: 'Merriweather', serif;
-            color: #fff;
-            font-weight: 500;
-        }
-
-        /* NORTH - Montserrat */
-        .story-north .story-content {
-            background: rgba(25, 25, 112, 0.6);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-        }
-        .story-north h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.2rem;
-            color: #ff69b4;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 1rem;
-        }
-        .story-north p {
-            font-family: 'Montserrat', sans-serif;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        /* SOUTH - Lora */
-        .story-south .story-content {
-            background: rgba(70, 130, 180, 0.6);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-        }
-        .story-south h2 {
-            font-family: 'Lora', serif;
-            font-size: 2.2rem;
-            color: #87ceeb;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 1rem;
-        }
-        .story-south p {
-            font-family: 'Lora', serif;
-            color: #fff;
-            font-weight: 500;
-            font-style: italic;
-        }
-
-        /* WEST - Inter */
-        .story-west .story-content {
-            background: rgba(75, 0, 130, 0.6);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-        }
-        .story-west h2 {
-            font-family: 'Inter', sans-serif;
-            font-size: 2.2rem;
-            color: #dda0dd;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 1rem;
-        }
-        .story-west p {
-            font-family: 'Inter', sans-serif;
-            color: #fff;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-
-        /* TIGER - Poppins */
-        .story-tiger .story-content {
-            background: rgba(184, 134, 11, 0.6);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-        }
-        .story-tiger h2 {
-            font-family: 'Poppins', sans-serif;
-            font-size: 2.2rem;
-            color: #ff8c00;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 1rem;
-        }
-        .story-tiger p {
-            font-family: 'Poppins', sans-serif;
-            color: #fff;
-            font-weight: 600;
-        }
-
-        /* JAYDEN - Merriweather Bold */
-        .story-jayden .story-content {
-            background: rgba(128, 0, 32, 0.6);
-            padding: 2rem;
-            border-radius: 10px;
-            backdrop-filter: blur(5px);
-        }
-        .story-jayden h2 {
-            font-family: 'Merriweather', serif;
-            font-size: 2.2rem;
-            color: #ff1493;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-            margin-bottom: 1rem;
-            font-weight: 700;
-        }
-        .story-jayden p {
-            font-family: 'Merriweather', serif;
-            color: #fff;
-            font-weight: 700;
-        }
 
         .story-section {
             padding: 60px 20px;
@@ -191,6 +68,106 @@
         .story-img {
             max-width: 100%;
             border-radius: 50%;
+        }
+
+        .story-text {
+            padding: 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .story-text h2 {
+            font-size: 2.2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        .story-text p {
+            color: #fff;
+            font-size: 150%;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* EAST - Playfair Display */
+        .story-east .story-text {
+            background: rgba(139, 69, 19, 0.6);
+        }
+        .story-east h2 {
+            font-family: 'Playfair Display', serif;
+            color: #ffd700;
+        }
+        .story-east p {
+            font-family: 'Merriweather', serif;
+            font-weight: 500;
+        }
+
+        /* NORTH - Montserrat */
+        .story-north .story-text {
+            background: rgba(25, 25, 112, 0.6);
+        }
+        .story-north h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #ff69b4;
+        }
+        .story-north p {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+        }
+
+        /* SOUTH - Lora */
+        .story-south .story-text {
+            background: rgba(70, 130, 180, 0.6);
+        }
+        .story-south h2 {
+            font-family: 'Lora', serif;
+            color: #87ceeb;
+        }
+        .story-south p {
+            font-family: 'Lora', serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        /* WEST - Inter */
+        .story-west .story-text {
+            background: rgba(75, 0, 130, 0.6);
+        }
+        .story-west h2 {
+            font-family: 'Inter', sans-serif;
+            color: #dda0dd;
+        }
+        .story-west p {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        /* TIGER - Poppins */
+        .story-tiger .story-text {
+            background: rgba(184, 134, 11, 0.6);
+        }
+        .story-tiger h2 {
+            font-family: 'Poppins', sans-serif;
+            color: #ff8c00;
+        }
+        .story-tiger p {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+        }
+
+        /* JAYDEN - Merriweather Bold */
+        .story-jayden .story-text {
+            background: rgba(128, 0, 32, 0.6);
+        }
+        .story-jayden h2 {
+            font-family: 'Merriweather', serif;
+            color: #ff1493;
+            font-weight: 700;
+        }
+        .story-jayden p {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -230,10 +207,10 @@
         <div class="container">
             <div class="story-grid">
                 <div class="col">
-                    <div><img class="story-img img-fluid" src="img/ter y hill.webp" alt="Hill & Easter" /></div>
+                    <img class="story-img img-fluid" src="img/ter y hill.webp" alt="Hill & Easter" />
                 </div>
                 <div class="col">
-                    <div class="story-content">
+                    <div class="story-text">
                         <h2>East: Tag! You're Mine (Hill & Easter)</h2>
                         <p>Easter decide estudiar en el norte de Tailandia para alejarse de los recuerdos
                             de su relacion pasada que termino de forma incierta.
@@ -253,10 +230,10 @@
         <div class="container">
             <div class="story-grid">
                 <div class="col">
-                    <div><img class="story-img img-fluid" src="img/north.webp" alt="Johan & North" /></div>
+                    <img class="story-img img-fluid" src="img/north.webp" alt="Johan & North" />
                 </div>
                 <div class="col">
-                    <div class="story-content">
+                    <div class="story-text">
                         <h2>North: How Much Is Your Love? (Johan & North)</h2>
                         <p>North es un estudiante alegre y algo caotico que, tras una pelea de borrachos,
                             termina debiendo una gran suma de dinero. Johan, un estudiante de medicina serio y posesivo,
@@ -273,10 +250,10 @@
         <div class="container">
             <div class="story-grid">
                 <div class="col">
-                    <div><img class="story-img img-fluid" src="img/poon.jpg" alt="Tonfah & Typhoon" /></div>
+                    <img class="story-img img-fluid" src="img/poon.jpg" alt="Tonfah & Typhoon" />
                 </div>
                 <div class="col">
-                    <div class="story-content">
+                    <div class="story-text">
                         <h2>South: Beside the Sky (Tonfah & Typhoon)</h2>
                         <p>Typhoon ha vivido idealizando a Tonfah (Fa) desde que eran ninos, viendolo como un "cielo
                             inalcanzable".
@@ -295,10 +272,10 @@
         <div class="container">
             <div class="story-grid">
                 <div class="col">
-                    <div><img class="story-img img-fluid" src="img/dao.webp" alt="Arthit & Daotok" /></div>
+                    <img class="story-img img-fluid" src="img/dao.webp" alt="Arthit & Daotok" />
                 </div>
                 <div class="col">
-                    <div class="story-content">
+                    <div class="story-text">
                         <h2>West: The Sun From Another Star (Arthit & Daotok)</h2>
                         <p>Esta es la historia con tintes mas sobrenaturales del proyecto.
                             Daotok es un chico artistico y solitario que tiene la capacidad de ver espiritus.
@@ -317,10 +294,10 @@
         <div class="container">
             <div class="story-grid">
                 <div class="col">
-                    <div><img class="story-img img-fluid" src="img/tiguer.webp" alt="Tiger & Duen Nao" /></div>
+                    <img class="story-img img-fluid" src="img/tiguer.webp" alt="Tiger & Duen Nao" />
                 </div>
                 <div class="col">
-                    <div class="story-content">
+                    <div class="story-text">
                         <h2>Tiger & Duen Nao: Lately It's Winter Season</h2>
                         <p>Esta historia se centra en Tiger, el hijo menor de un poderoso jefe de la mafia,
                             quien lleva una vida imprudente y sin rumbo fijo debido a conflictos familiares.
@@ -336,11 +313,10 @@
         <div class="container">
             <div class="story-grid">
                 <div class="col">
-                    <div><img class="story-img img-fluid" src="img/hermandi de na.webp" alt="Jayden & Dan Nuea" />
-                    </div>
+                    <img class="story-img img-fluid" src="img/hermandi de na.webp" alt="Jayden & Dan Nuea" />
                 </div>
                 <div class="col">
-                    <div class="story-content">
+                    <div class="story-text">
                         <h2>Jayden & Dan Nuea</h2>
                         <p>La historia da un giro dramatico cuando Dan Nuea
                             (el hermano gemelo de Duen Nao) es secuestrado por error.

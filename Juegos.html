@@ -6,12 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:wght@400;700&family=Merriweather:wght@400&display=swap" rel="stylesheet">
     <style>
         .body-juegos {
             background: url('img/zzzzzzzzzzzzzzz.webp') no-repeat center center fixed;
             background-position: top center;
             background-size: cover;
             background-repeat: no-repeat;
+        }
+
+        .juego-card {
+            background: linear-gradient(
+                rgba(139, 90, 43, 0.7),
+                rgba(101, 67, 33, 0.75)
+            );
+            padding: 2rem 2.5rem;
+            border-radius: 18px;
+            border: 3px solid #d4af37;
+            box-shadow:
+                0 0 8px rgba(212, 175, 55, 0.4),
+                0 0 20px rgba(212, 175, 55, 0.2),
+                inset 0 0 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .juego-card::before {
+            content: "";
+            position: absolute;
+            inset: 8px;
+            border: 2px solid rgba(212, 175, 55, 0.5);
+            border-radius: 12px;
+            pointer-events: none;
+        }
+
+        .juego-card h2 {
+            font-family: 'Pirata One', cursive;
+            color: #ffd700;
+            font-size: 1.8rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+            margin-bottom: 1rem;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .juego-card p {
+            font-family: 'Merriweather', serif;
+            color: #f5e6c8;
+            position: relative;
+            z-index: 1;
+        }
+
+        .juego-card .subtitle {
+            color: #f5e6c8;
+            font-size: 0.95rem;
+            opacity: 0.8;
+        }
+
+        .games-title {
+            font-family: 'Pirata One', cursive;
+            color: #ffd700;
+            font-size: 2.5rem;
+            text-align: center;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.3);
+            margin-bottom: 2rem;
         }
     </style>
 </head>
@@ -37,32 +98,30 @@
 
     <section class="page-section">
         <div class="container">
-            <div class="col-12" style="margin-bottom: 1.5rem;">
-                <div class="libro-card">
-                    <h2>Sopa de Letras</h2>
-                    <p style="margin-bottom: 1.5rem; color: #666; text-align: left;">Encuentra los nombres de los personajes principales:</p>
-                    <div id="wordSearchContainer" style="text-align: center; margin-bottom: 1.5rem;"></div>
-                    <p style="font-size: 0.9rem; color: #999; text-align: left;">Palabras a encontrar: HILL, EASTER, JOHAN, NORTH, TONFAH, TYPHOON, HOWLSAIRY</p>
-                </div>
+            <h1 class="games-title">Juegos</h1>
+
+            <div class="juego-card">
+                <h2>Sopa de Letras</h2>
+                <p class="subtitle">Encuentra los nombres de los personajes principales:</p>
+                <div id="wordSearchContainer" style="text-align: center; margin: 1.5rem 0;"></div>
+                <p class="subtitle">Palabras a encontrar: HILL, EASTER, JOHAN, NORTH, TONFAH, TYPHOON, HOWLSAIRY</p>
             </div>
 
-            <div class="col-12" style="margin-bottom: 1.5rem;">
-                <div class="libro-card">
-                    <h2>Enlaza las parejas</h2>
-                    <p style="margin-bottom: 1.5rem; color: #666; text-align: left;">Haz clic en dos cartas para encontrar a los personajes del mismo par (3 parejas):</p>
-                    <div id="matchingGame" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; max-width: 400px; margin: 0 auto 1.5rem;"></div>
-                    <p id="matchStatus" style="text-align: center; font-weight: 700; color: #28a745;"></p>
-                </div>
+            <div class="juego-card">
+                <h2>Enlaza las parejas</h2>
+                <p class="subtitle">Haz clic en dos cartas para encontrar a los personajes del mismo par (3 parejas):</p>
+                <div id="matchingGame" style="display: grid; gap: 1rem; max-width: 500px; margin: 1.5rem auto;"></div>
+                <p id="matchStatus" style="text-align: center; font-weight: 700; color: #ffd700; position: relative; z-index: 1;"></p>
             </div>
 
-            <div class="col-12" style="margin-bottom: 1.5rem;">
-                <div class="libro-card">
-                    <h2>Que tan fan eres?</h2>
-                    <p style="margin-bottom: 1.5rem; color: #666; text-align: left;">Responde estas preguntas y descubre tu porcentaje de fan:</p>
-                    <div id="quizContainer"></div>
+            <div class="juego-card">
+                <h2>Que tan fan eres?</h2>
+                <p class="subtitle">Responde estas preguntas y descubre tu porcentaje de fan:</p>
+                <div id="quizContainer" style="margin-top: 1rem;"></div>
+                <div style="text-align: center;">
                     <button id="submitQuiz" class="btn-custom" style="margin-top: 1.5rem;">Ver mi porcentaje</button>
-                    <div id="quizResult" style="text-align: center; margin-top: 2rem; font-weight: 700; font-size: 1.3rem; color: #28a745;"></div>
                 </div>
+                <div id="quizResult" style="text-align: center; margin-top: 2rem; font-weight: 700; font-size: 1.3rem; color: #ffd700; position: relative; z-index: 1;"></div>
             </div>
         </div>
     </section>
