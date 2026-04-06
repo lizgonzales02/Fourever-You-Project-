@@ -8,145 +8,7 @@
     <link rel="icon" href="img/libro.svg" type="image/svg+xml">
     <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Poppins:wght@400;700&family=Playfair+Display:wght@700&family=Merriweather:wght@400&family=Montserrat:wght@600&family=Lora:wght@500&family=Inter:wght@500&display=swap" rel="stylesheet">
     <title>Fourever You</title>
-    <style>
-        /* FUENTE PIRATA */
-        .pirate-font {
-            font-family: 'Pirata One', cursive;
-        }
 
-        /* SECCIONES PERGAMINO */
-        .pergamino {
-            background:
-                linear-gradient(rgba(139, 90, 43, 0.85), rgba(101, 67, 33, 0.9)),
-                url('img/papel-textura.jpg');
-            background-size: cover;
-            background-blend-mode: multiply;
-            padding: 2.5rem;
-            border-radius: 18px;
-            border: 4px solid #d4af37;
-            box-shadow:
-                0 0 8px rgba(212, 175, 55, 0.5),
-                0 0 20px rgba(212, 175, 55, 0.3),
-                0 0 40px rgba(255, 215, 0, 0.15),
-                inset 0 0 30px rgba(0, 0, 0, 0.3);
-            position: relative;
-            overflow: hidden;
-            color: #f5e6c8;
-        }
-
-        .pergamino::before {
-            content: "";
-            position: absolute;
-            inset: 8px;
-            border: 2px solid rgba(212, 175, 55, 0.6);
-            border-radius: 12px;
-            pointer-events: none;
-        }
-
-        .pergamino::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: url('img/papel-textura.jpg');
-            opacity: 0.15;
-            mix-blend-mode: overlay;
-            pointer-events: none;
-            border-radius: 18px;
-        }
-
-        /* BRILLO DORADO ANIMADO */
-        .pergamino .brillo-dorado {
-            position: absolute;
-            top: -50%;
-            left: -50%;
-            width: 200%;
-            height: 200%;
-            background: linear-gradient(
-                45deg,
-                transparent 40%,
-                rgba(255, 215, 0, 0.15) 45%,
-                rgba(255, 215, 0, 0.3) 50%,
-                rgba(255, 215, 0, 0.15) 55%,
-                transparent 60%
-            );
-            animation: brillo 4s ease-in-out infinite;
-            pointer-events: none;
-        }
-
-        @keyframes brillo {
-            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-        }
-
-        /* ESQUINAS DECORATIVAS */
-        .pergamino .esquina {
-            position: absolute;
-            width: 30px;
-            height: 30px;
-            border: 3px solid #d4af37;
-            z-index: 2;
-        }
-        .pergamino .esquina-tl { top: 12px; left: 12px; border-right: none; border-bottom: none; }
-        .pergamino .esquina-tr { top: 12px; right: 12px; border-left: none; border-bottom: none; }
-        .pergamino .esquina-bl { bottom: 12px; left: 12px; border-right: none; border-top: none; }
-        .pergamino .esquina-br { bottom: 12px; right: 12px; border-left: none; border-top: none; }
-
-        /* TEXTO DENTRO DE PERGAMINO */
-        .pergamino h2 {
-            font-family: 'Pirata One', cursive;
-            color: #ffd700;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7), 0 0 15px rgba(255, 215, 0, 0.3);
-            font-size: 2rem;
-            position: relative;
-            z-index: 1;
-        }
-
-        .pergamino .section-heading-upper {
-            font-family: 'Pirata One', cursive;
-            color: #ffecb3;
-            font-size: 1rem;
-            letter-spacing: 3px;
-        }
-
-        .pergamino .section-heading-lower {
-            font-family: 'Pirata One', cursive;
-            color: #ffd700;
-            font-size: 2.2rem;
-        }
-
-        .pergamino p {
-            font-family: 'Merriweather', serif;
-            color: #f5e6c8;
-            font-size: 1.1rem;
-            line-height: 1.8;
-            position: relative;
-            z-index: 1;
-            text-align: justify;
-        }
-
-        /* INTRO LADO A LADO */
-        .intro .pergamino {
-            max-width: 500px;
-            flex-shrink: 0;
-        }
-
-        /* HEADER PIRATA */
-        .hhhhh {
-            background: linear-gradient(rgba(245, 138, 138, 0.4), rgba(0, 0, 0, 0.4));
-            padding: 2.5rem 1rem;
-            text-align: center;
-            border-bottom: 3px solid #d4af37;
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
-        }
-
-        .hhhhh .site-heading-lower {
-            font-family: 'Pirata One', cursive;
-            color: #ffd700;
-            font-size: 3rem;
-            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.3);
-            letter-spacing: 2px;
-        }
-    </style>
 </head>
 
 <body>
@@ -165,8 +27,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="intro.html">Intro</a></li>
                     <li class="nav-item"><a class="nav-link" href="libros.html">Libros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
                     <li class="nav-item"><a class="nav-link" href="Juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
                     <li class="nav-item"><a class="nav-link" href="series.html">Serie</a></li>
                 </ul>
             </div>
@@ -203,8 +65,8 @@
                 <h2 class="section-heading">
                     <span class="section-heading-upper">Sipnosis</span>
                 </h2>
-                <p>La historia sigue la vida de cuatro estudiantes de medicina de segundo ano
-                    que encuentran el amor con cuatro estudiantes de tercer ano de la misma universidad.
+                <p>La historia sigue la vida de cuatro estudiantes de medicina de segundo año
+                    que encuentran el amor con cuatro estudiantes de tercer año de la misma universidad.
                     El proyecto se divide en historias centradas en diferentes parejas,
                     cada una asociada a un punto cardinal y una novela especifica</p>
             </div>

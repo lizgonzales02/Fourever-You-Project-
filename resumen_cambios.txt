@@ -1,0 +1,188 @@
+========================================
+  RESUMEN DE CAMBIOS - Proyecto FY
+========================================
+
+PAGINA: index.html, intro.html, libros.html, Juegos.html, Produccion.html, series.html
+
+========================================
+1. ELIMINACION DE BOOTSTRAP
+========================================
+
+Se eliminaron TODAS las clases de Bootstrap de todos los HTML:
+- navbar, navbar-expand-lg, navbar-dark, py-lg-4
+- navbar-toggler, navbar-toggler-icon
+- collapse, navbar-collapse
+- navbar-nav, mx-auto
+- nav-item, px-lg-4, nav-link, text-uppercase
+- text-center, text-white, text-faded
+- img-fluid, mb-3, mb-lg-0, rounded, rounded-circle
+- mb-0, mb-4, p-5, p-0
+- row, col, col-12, col-xl-9, col-lg-6, order-lg-1, order-lg-2
+- gx-5, align-items-center
+- display-4, section-heading, section-heading-upper, section-heading-lower
+- bg-faded, cta-inner
+- d-none, d-lg-block
+- btn, btn-custom, btn-xl, rounded-pill
+- page-section, clearfix
+
+========================================
+2. ERRORES CORREGIDOS
+========================================
+
+- intro.html linea 8: <link rel="stylesheet" href="js/juegos.js"> (CSS apuntando a JS) - ELIMINADO
+- Juegos.html: script juegos.js duplicado (estaba 2 veces) - ELIMINADO uno
+- Juegos.html linea 19: atributo CSS mal formado en header - CORREGIDO
+- libros.html linea 145: atributo CSS mal formado en header - CORREGIDO
+- series.html linea 65: atributo CSS mal formado en header - CORREGIDO
+- Produccion.html linea 247: CSS linear-gradient mal formado - CORREGIDO
+- series.html y Produccion.html: divs sin cerrar - CORREGIDO
+- <style> dentro del <body> en intro.html - MOVIDOS al <head>
+- Enlaces a paginas en minusculas (produccion.html) - CORREGIDO a Produccion.html
+
+========================================
+3. CSS - estilos.css
+========================================
+
+Se reescribio completamente con clases propias que reemplazan Bootstrap:
+- .text-center, .text-white, .text-uppercase
+- .img-fluid, .rounded, .rounded-circle
+- .row, .col, .col-12
+- .navbar-nav, .nav-item, .nav-link
+- .navbar-toggler, .navbar-toggler-icon
+- .navbar-collapse, .navbar-collapse.show
+- .container
+- .libro-card, .btn-link
+- .masthead, .masthead-heading, .masthead-subheading
+- .section-heading, .section-heading-upper, .section-heading-lower
+- .cta-inner
+- .footer
+- .btn-custom
+- Media queries para movil (768px y 576px)
+
+========================================
+4. ESTILO PERGAMINO (index.html)
+========================================
+
+Se agrego estilo pergamino dorado a las secciones:
+- Fuente "Pirata One" de Google Fonts
+- Clase .pergamino con fondo marron semi-transparente
+- Borde dorado de 4px con sombra brillante
+- Borde interno dorado decorativo (::before)
+- Textura de papel superpuesta (::after)
+- Animacion de brillo dorado (.brillo-dorado)
+- Esquineras decorativas doradas en 4 esquinas
+- TItulos con fuente Pirata One y color dorado
+- Texto en color crema con fuente Merriweather
+
+========================================
+5. HEADER PIRATA
+========================================
+
+En todas las paginas se agrego:
+- <header class="hhhhh"> con titulo "Fourever You (Project)"
+- Fuente Pirata One, color dorado
+- Fondo semi-transparente (rgba 0.4)
+- Borde inferior dorado
+
+========================================
+6. INDEX.HTML
+========================================
+
+- Header transparente con fuente pirata
+- Primera seccion: imagen al lado del pergamino (flexbox)
+- Segunda seccion (Sipnosis): pergamino centrado
+- Imagen reducida a 250px
+
+========================================
+7. INTRO.HTML
+========================================
+
+- Se elimino <link a juegos.js>
+- Se movieron <style> al <head>
+- Se eliminaron clases Bootstrap
+- Se cambio .p-5 por .story-text
+- Se corrigio menu con id="menuPrincipal"
+- Header centrado con texto centrado
+- 6 historias con colores/fuentes diferentes:
+  * East: Playfair Display + dorado
+  * North: Montserrat + rosa
+  * South: Lora + azul
+  * West: Inter + morado
+  * Tiger: Poppins + naranja
+  * Jayden: Merriweather + rosa fuerte
+
+========================================
+8. LIBROS.HTML
+========================================
+
+- Se eliminaron clases Bootstrap
+- Se cambio estructura row/col por books-container/book-item
+- 6 libros con links a Google Drive
+- Cada libro con color y fuente unica
+
+========================================
+9. PRODUCCION.HTML
+========================================
+
+- Se elimino Bootstrap
+- Fuente Pirata One agregada
+- Seccion-cards con pergamino semi-transparente (65-70% opacidad)
+- Brillo dorado animado
+- Tarjetas de actores con fondo pergamino y borde dorado
+- Nombres en blanco, nombres reales en dorado
+- Titulos con fuente Pirata One y color dorado
+- Texto en color crema
+
+========================================
+10. SERIES.HTML
+========================================
+
+- Se elimino Bootstrap
+- Se corrigieron divs sin cerrar
+- Grid de videos con CSS Grid
+- 17 episodios con iframes de YouTube
+
+========================================
+11. JUEGOS.HTML
+========================================
+
+- Se elimino Bootstrap
+- Estilo pergamino en las tarjetas de juegos
+- Titulos con fuente Pirata One y color dorado
+- Fuente Pirata One agregada
+
+========================================
+12. JUEGOS.JS - SOPA DE LETRAS
+========================================
+
+- Cuadricula de 12x12 (mas grande)
+- 11 palabras: HILL, EASTER, JOHAN, NORTH, TONFAH, TYPHOON, ARTHIT, DAOTOK, TIGER, DUENNAO, JAYDEN
+- Colores dorados/marron
+- Lista de palabras que tacha las encontradas
+- Celdas encontradas con brillo dorado
+
+========================================
+13. JUEGOS.JS - PAREJAS POR NIVELES
+========================================
+
+- 5 niveles progresivos:
+  * Nivel 1 (Facil): 3 parejas - Hill/Easter, Johan/North, Tonfah/Typhoon
+  * Nivel 2 (Normal): 4 parejas - + Arthit/Daotok
+  * Nivel 3 (Intermedio): 5 parejas - + Tiger/DuenNao
+  * Nivel 4 (Dificil): 6 parejas - + Jayden/DanNuea
+  * Nivel 5 (Experto): 7 parejas - + Phoon/Fa
+- Al completar un nivel pasa automatico al siguiente
+- Al terminar los 5 muestra felicitacion y boton para reiniciar
+- Colores dorados/marron
+
+========================================
+14. JUEGOS.JS - QUIZ
+========================================
+
+- Se dejo igual como pidio el usuario
+- 5 preguntas sobre la novela
+- Colores dorados
+
+========================================
+FIN DEL RESUMEN
+========================================

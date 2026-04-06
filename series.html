@@ -5,19 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+     <link rel="icon" href="img/videos.svg" type="image/svg+xml">
     <title>Forever You - Serie</title>
     <style>
         .body-series {
-            background: url('img/zzzzzzzzzzzzzzz.webp') no-repeat center center fixed;
-            background-position: top center;
-            background-size: cover;
+            background: url('img/foreghj.png') no-repeat center center fixed;
+            background-size: 100% 100%;
             background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .body-series .hhhhh {
+            background: transparent;
+            border-bottom: 3px solid #87ceeb;
+        }
+
+        .body-series .hhhhh .site-heading-lower {
+            color: #4682b4;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .body-series #mainNav {
+            background: transparent;
+            border-bottom: 2px solid #87ceeb;
+        }
+
+        .body-series .nav-link {
+            color: #48D1CC;
+            font-family: Georgia, serif;
+        }
+
+        .body-series .nav-link:hover {
+            color: #20B2AA;
         }
 
         .video-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
             margin: 2rem 0;
         }
 
@@ -26,33 +51,45 @@
             border-radius: 0.75rem;
             overflow: hidden;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
         }
 
         .video-card iframe {
             width: 100%;
             height: 250px;
             border: none;
+            display: block;
         }
 
         .video-info {
-            padding: 1.5rem;
+            padding: 1rem;
         }
 
         .video-info h3 {
             margin: 0 0 0.5rem 0;
-            font-size: 1.1rem;
+            font-size: 1rem;
             color: #2c2c2c;
         }
 
         .video-info p {
             margin: 0;
             color: #666;
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 
 <body class="body-series">
+    <header class="hhhhh">
+        <h1 class="site-heading-lower">
+            <span>Fourever You (Project)</span>
+        </h1>
+    </header>
     <nav id="mainNav">
         <div class="container">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
@@ -63,8 +100,8 @@
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="intro.html">Intro</a></li>
                     <li class="nav-item"><a class="nav-link" href="libros.html">Libros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
                     <li class="nav-item"><a class="nav-link" href="Juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
                     <li class="nav-item"><a class="nav-link" href="series.html">Serie</a></li>
                 </ul>
             </div>
@@ -72,9 +109,9 @@
     </nav>
 
     <header class="masthead text-center text-white">
-        <h1 class="site-heading-lower" style="color: #f6e1c5; font-size: 3rem;">Forever You-La Serie</h1>
-        <p style="color: #f6e1c5; font-size: 1.1rem;">Todos los capitulos disponibles en YouTube</p>
-        <p style="color: #f6e1c5; font-size: 1.1rem;">TEMPORADA 1</p>
+        <h1 class="site-heading-lower" style="color: #1a3a1a; font-size: 3rem; font-family: Georgia, serif;">Forever You-La Serie</h1>
+        <p style="color: #1a3a1a; font-size: 1.1rem; font-family: Georgia, serif;">Todos los capitulos disponibles en YouTube</p>
+        <p style="color: #1a3a1a; font-size: 1.1rem; font-family: Georgia, serif;">TEMPORADA 1</p>
     </header>
 
     <section class="page-section">
@@ -204,9 +241,9 @@
         </div>
     </section>
     <header class="masthead text-center text-white">
-        <h1 class="site-heading-lower" style="color: #f6e1c5; font-size: 3rem;">Forever You-La Serie 2da Temporada</h1>
-        <p style="color: #f6e1c5; font-size: 1.1rem;">Todos los capitulos disponibles en YouTube</p>
-        <p style="color: #f6e1c5; font-size: 1.1rem;">TEMPORADA 2</p>
+        <h1 class="site-heading-lower" style="color: #1a3a1a; font-size: 3rem; font-family: Georgia, serif;">Forever You-La Serie 2da Temporada</h1>
+        <p style="color: #1a3a1a; font-size: 1.1rem; font-family: Georgia, serif;">Todos los capitulos disponibles en YouTube</p>
+        <p style="color: #1a3a1a; font-size: 1.1rem; font-family: Georgia, serif;">TEMPORADA 2</p>
     </header>
 
     <section class="page-section">
@@ -296,8 +333,9 @@
                         <p>[Official] Fourever You | The Sun From Another Star  |</p>
                     </div>
                 </div> 
-
-                <p style="color: #ece2d5; font-size: 1.1rem;" text-align="center">Todos los capitulos disponibles en YouTube la segunda temporada aun esta en emisión y se actualiza todos los Miércoles</p>
+            </div>
+            <p style="color: #1a3a1a; font-size: 1.1rem; font-family: Georgia, serif; text-align: center; width: 100%; margin-top: 1.5rem;">Todos los capitulos disponibles en YouTube la segunda temporada aun esta en emisión y se actualiza todos los Miércoles</p>
+        </div>
     </section>
     
     
