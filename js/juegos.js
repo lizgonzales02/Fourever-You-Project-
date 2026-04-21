@@ -1,6 +1,6 @@
 // ===== SOPA DE LETRAS =====
-const gridSize = 12;
-const wordsToFind = ['HILL', 'EASTER', 'JOHAN', 'NORTH', 'TONFAH', 'TYPHOON', 'ARTHIT', 'DAOTOK', 'TIGER', 'DUENNAO', 'JAYDEN'];
+const gridSize = 14;
+const wordsToFind = ['HILL', 'EASTER', 'JOHAN', 'NORTH', 'TONFAH', 'TYPHOON', 'ARTHIT', 'DAOTOK', 'TIGER', 'DUENNAO', 'JAYDEN', 'DANNUEA'];
 const foundWords = new Set();
 let startCell = null;
 let wordSearchGrid = [];
@@ -11,16 +11,17 @@ function generateWordSearchGrid() {
 
     const placements = [
         { word: 'EASTER', row: 0, col: 0, dir: 'h' },
-        { word: 'JOHAN', row: 0, col: 7, dir: 'h' },
+        { word: 'JOHAN', row: 0, col: 8, dir: 'h' },
         { word: 'HILL', row: 2, col: 0, dir: 'h' },
-        { word: 'NORTH', row: 2, col: 8, dir: 'h' },
-        { word: 'TYPHOON', row: 4, col: 2, dir: 'h' },
-        { word: 'ARTHIT', row: 6, col: 0, dir: 'h' },
-        { word: 'TIGER', row: 6, col: 7, dir: 'h' },
-        { word: 'DAOTOK', row: 8, col: 3, dir: 'h' },
-        { word: 'JAYDEN', row: 10, col: 0, dir: 'h' },
-        { word: 'DUENNAO', row: 10, col: 5, dir: 'h' },
-        { word: 'TONFAH', row: 3, col: 0, dir: 'v' },
+        { word: 'NORTH', row: 2, col: 6, dir: 'h' },
+        { word: 'TYPHOON', row: 3, col: 4, dir: 'h' },
+        { word: 'ARTHIT', row: 4, col: 0, dir: 'h' },
+        { word: 'TIGER', row: 5, col: 9, dir: 'h' },
+        { word: 'DAOTOK', row: 6, col: 0, dir: 'h' },
+        { word: 'JAYDEN', row: 7, col: 6, dir: 'h' },
+        { word: 'DUENNAO', row: 8, col: 0, dir: 'h' },
+        { word: 'DANNUEA', row: 9, col: 7, dir: 'h' },
+        { word: 'TONFAH', row: 10, col: 0, dir: 'h' },
     ];
 
     placements.forEach(p => {
@@ -87,15 +88,15 @@ function createWordSearchTable() {
             const td = document.createElement('td');
             td.textContent = letter;
             td.style.cssText = `
-                width: 38px;
-                height: 38px;
+                width: 45px;
+                height: 45px;
                 border: 1px solid rgba(212, 175, 55, 0.4);
                 text-align: center;
                 font-weight: bold;
                 cursor: pointer;
                 transition: all 0.2s;
                 user-select: none;
-                font-size: 1rem;
+                font-size: 1.4rem;
                 color: #4b2e15;
                 font-family: 'Poppins', sans-serif;
             `;
@@ -126,10 +127,10 @@ function createWordSearchTable() {
     const wordListDiv = document.createElement('div');
     wordListDiv.style.cssText = `
         text-align: center;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         font-family: 'Merriweather', serif;
         color: #f5e6c8;
-        font-size: 0.95rem;
+        font-size: 1.2rem;
     `;
     wordListDiv.id = 'wordList';
     wordListDiv.innerHTML = `<strong style="color: #ffd700;">Palabras:</strong> ${wordsToFind.join(' | ')}`;
@@ -538,8 +539,8 @@ const quizQuestions = [
     },
     {
         question: 'Cuantas parejas principales hay en la novela?',
-        options: ['2', '3', '4'],
-        correct: 1
+        options: ['2', '4', '6'],
+        correct: 2
     },
     {
         question: 'Cual es la serie adaptada de la novela?',

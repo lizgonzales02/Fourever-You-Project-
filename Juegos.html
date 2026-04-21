@@ -95,8 +95,8 @@
                     <li class="nav-item"><a class="nav-link" href="intro.html">Intro</a></li>
                     <li class="nav-item"><a class="nav-link" href="libros.html">Libros</a></li>
                     <li class="nav-item"><a class="nav-link" href="Juegos.html">Juegos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
                     <li class="nav-item"><a class="nav-link" href="series.html">Serie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Produccion.html">Produccion</a></li>
                 </ul>
             </div>
         </div>
@@ -106,21 +106,35 @@
         <div class="container">
             <h1 class="games-title">Juegos</h1>
 
-            <div class="juego-card">
+            <div id="menu-sopa" class="juego-card" onclick="mostrarJuego('sopa')" style="cursor: pointer;">
+                <h2>Sopa de Letras</h2>
+            </div>
+
+            <div id="menu-parejas" class="juego-card" onclick="mostrarJuego('parejas')" style="cursor: pointer;">
+                <h2>Enlaza las parejas</h2>
+            </div>
+
+            <div id="menu-quiz" class="juego-card" onclick="mostrarJuego('quiz')" style="cursor: pointer;">
+                <h2>Que tan fan eres?</h2>
+            </div>
+
+            <div id="juego-sopa" class="juego-card" style="display: none;">
                 <h2>Sopa de Letras</h2>
                 <p class="subtitle">Encuentra los nombres de los personajes principales:</p>
                 <div id="wordSearchContainer" style="text-align: center; margin: 1.5rem 0;"></div>
-                <p class="subtitle">Palabras a encontrar: HILL, EASTER, JOHAN, NORTH, TONFAH, TYPHOON, HOWLSAIRY</p>
+                <p class="subtitle">Palabras a encontrar: HILL, EASTER, JOHAN, NORTH, TONFAH, TYPHOON, DANNUEA, ARTHIT, DAOTOK, TIGER, DUENNAO, JAYDEN</p>
+                <button onclick="ocultarJuegos()" class="btn-custom" style="margin-top: 1rem;">Volver al menu</button>
             </div>
 
-            <div class="juego-card">
+            <div id="juego-parejas" class="juego-card" style="display: none;">
                 <h2>Enlaza las parejas</h2>
                 <p class="subtitle">Haz clic en dos cartas para encontrar a los personajes del mismo par (3 parejas):</p>
                 <div id="matchingGame" style="display: grid; gap: 1rem; max-width: 500px; margin: 1.5rem auto;"></div>
                 <p id="matchStatus" style="text-align: center; font-weight: 700; color: #ffd700; position: relative; z-index: 1;"></p>
+                <button onclick="ocultarJuegos()" class="btn-custom" style="margin-top: 1rem;">Volver al menu</button>
             </div>
 
-            <div class="juego-card">
+            <div id="juego-quiz" class="juego-card" style="display: none;">
                 <h2>Que tan fan eres?</h2>
                 <p class="subtitle">Responde estas preguntas y descubre tu porcentaje de fan:</p>
                 <div id="quizContainer" style="margin-top: 1rem;"></div>
@@ -128,9 +142,28 @@
                     <button id="submitQuiz" class="btn-custom" style="margin-top: 1.5rem;">Ver mi porcentaje</button>
                 </div>
                 <div id="quizResult" style="text-align: center; margin-top: 2rem; font-weight: 700; font-size: 1.3rem; color: #ffd700; position: relative; z-index: 1;"></div>
+                <button onclick="ocultarJuegos()" class="btn-custom" style="margin-top: 1rem;">Volver al menu</button>
             </div>
         </div>
     </section>
+
+    <script>
+        function mostrarJuego(juego) {
+            document.getElementById('menu-sopa').style.display = 'none';
+            document.getElementById('menu-parejas').style.display = 'none';
+            document.getElementById('menu-quiz').style.display = 'none';
+            document.getElementById('juego-' + juego).style.display = 'block';
+        }
+
+        function ocultarJuegos() {
+            document.getElementById('juego-sopa').style.display = 'none';
+            document.getElementById('juego-parejas').style.display = 'none';
+            document.getElementById('juego-quiz').style.display = 'none';
+            document.getElementById('menu-sopa').style.display = 'block';
+            document.getElementById('menu-parejas').style.display = 'block';
+            document.getElementById('menu-quiz').style.display = 'block';
+        }
+    </script>
 
     <footer class="footer">
         <p>&copy; 2025 Howlsairy. Todos los derechos reservados.</p>
