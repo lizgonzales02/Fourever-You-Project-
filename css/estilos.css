@@ -403,6 +403,39 @@ section, .page-section {
   .intro {
     flex-direction: column;
   }
+
+  /* JUEGOS - CELULAS MUY CHICAS */
+  #wordSearchGame td {
+    width: 22px !important;
+    height: 22px !important;
+    font-size: 0.7rem !important;
+  }
+
+  #wordList {
+    font-size: 0.7rem !important;
+  }
+
+  .match-card {
+    font-size: 0.7rem !important;
+    padding: 6px !important;
+    min-height: 32px !important;
+  }
+
+  #quizContainer > div {
+    font-size: 0.8rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .juego-card {
+    padding: 1rem !important;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+    border-radius: 12px !important;
+  }
+
+  .games-title {
+    font-size: 1.8rem !important;
+  }
 }
 
 .pirate-font {
@@ -504,6 +537,82 @@ section, .page-section {
 .intro .pergamino {
   max-width: 500px;
   flex-shrink: 0;
+}
+
+/* RESPONSIVE JUEGOS - SOPA DE LETRAS */
+#wordSearchGame {
+  overflow-x: auto;
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+
+#wordSearchGame table {
+  font-size: 0.7rem !important;
+}
+
+#wordSearchGame td {
+  width: 28px !important;
+  height: 28px !important;
+  font-size: 0.85rem !important;
+  padding: 2px !important;
+}
+
+#wordList {
+  font-size: 0.8rem !important;
+  padding: 0 0.5rem;
+  word-break: break-word;
+}
+
+/* RESPONSIVE JUEGOS - PAREJAS */
+#matchingGame {
+  max-width: 100% !important;
+  overflow-x: auto;
+  padding: 0.5rem;
+}
+
+#levelInfo {
+  font-size: 1rem !important;
+}
+
+#pairsStats {
+  font-size: 0.85rem !important;
+}
+
+.match-card {
+  font-size: 0.85rem !important;
+  padding: 10px !important;
+  min-height: 40px !important;
+}
+
+/* RESPONSIVE JUEGOS - QUIZ */
+#quizContainer {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#quizContainer > div {
+  padding: 0.75rem !important;
+  font-size: 0.9rem;
+}
+
+#quizResult {
+  font-size: 1rem !important;
+  padding: 0.5rem;
+}
+
+/* ARREGLO OVERFLOW GENERAL */
+body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+.page-section {
+  overflow-x: hidden;
+}
+
+.juego-card {
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .hhhhh {
